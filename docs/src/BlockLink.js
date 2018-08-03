@@ -4,7 +4,7 @@ const hoverColor = props =>
   props.hoverColor
     ? {
         '&:hover': {
-          color: props.theme.colors[props.hoverColor] || props.hoverColor
+          color: props.theme.getColor(props.hoverColor) || props.hoverColor
         }
       }
     : null

@@ -175,6 +175,35 @@ const transitionDelays = {
   xLarge: `360ms`
 }
 
+const colorRef = {
+  primaryButtonBgColor: 'blue',
+  primaryButtonBgHoverColor: 'darkBlue',
+  primaryButtonTextColor: 'white',
+
+  secondarybuttonBgColor: 'green',
+  secondaryButtonBgHoverColor: 'darkGreen',
+  secondaryButtonTextColor: 'blue',
+  secondaryButtonTextHoverColor: 'darkBlue',
+
+  primaryBackground: 'gray',
+
+  primaryCheckBoxColor: 'blue'
+}
+
+const getColor = function getColor(color) {
+  if (!color) return
+
+  if (!!this.colorRef[color]) {
+    return this.colors[this.colorRef[color]]
+  }
+
+  if (!!this.colors[color]) {
+    return this.colors[color]
+  }
+
+  return null
+}
+
 const theme = {
   breakpoints,
   mediaQueries,
@@ -192,7 +221,9 @@ const theme = {
   maxContainerWidth,
   duration,
   timingFunctions,
-  transitionDelays
+  transitionDelays,
+  getColor,
+  colorRef
 }
 
 export default theme

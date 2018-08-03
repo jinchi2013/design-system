@@ -1,6 +1,6 @@
 {
-  "name": "pcln-design-system",
-  "version": "1.0.0-68",
+  "name": "poc-booking-pcln-design-system",
+  "version": "0.0.1-68",
   "description": "Priceline Design System",
   "main": "dist/index.js",
   "scripts": {

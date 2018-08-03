@@ -33,7 +33,7 @@ const CheckBoxWrapper = Box.extend`
       color: ${props =>
         props.disabled
           ? props.theme.colors.borderGray
-          : props.theme.colors.blue};
+          : props.theme.getColor('primaryCheckBoxColor')};
     }
 
     & ~ svg[data-name='empty'] {
